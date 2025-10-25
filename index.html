@@ -113,6 +113,13 @@
       text-align: center;
       background: white;
 
+      img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+      }
+
       >figcaption {
         font: 500 75% var(--font-sans);
         background: var(--color-neutral-95);
@@ -151,22 +158,32 @@
   </header>
 
   <main>
-    <h2>Proposition: [STATE PROPOSITION]</h2>
+    <h2>Proposition: NYPD racial bias is likely.</h2>
 
     <section>
       <h3>FOR the Proposition</h3>
 
       <figure>
-        <img src="project2stance1" alt="Graph: Police Show Racial Bias in NYC " />
-        <figcaption>BRIEF CAPTION HERE.</figcaption>
+        <img src="project2stance1.png" alt="Graph: Police Show Racial Bias in NYC " />
+        <figcaption>Racial Bias</figcaption>
       </figure>
 
       <p>Design Decisions and Rationale:</p>
 
       <ul>
-        <li>RATIONALE_1</li>
-        <li>RATIONALE_2</li>
-        <li>RATIONALE_3</li>
+        <li> <b> Use raw counts. </b>Score: -0.5 I considered using per capita but I felt raw counts would be simpler
+          and
+          easier to grasp for the average person. I also considered using percentage of counts (e.g. ~60% for Black
+          Americans), but the raw numbers felt more compelling.</li>
+        <li> <b> Descending order. </b> Score: -0.5. Sorting pushes highest value to the left, so the disparity is
+          instantly recognizable. It also frames the story by leading with the extreme. </li>
+        <li> <b> Red gradient. </b> Score: -1 Red can connote violence, harm, and anger. Darker red can indicate greater
+          severity. A neutral color like grey or blue would be more earnest but less impactful.</li>
+        <li> <b> Y-axis starts at zero. </b> Score: 1. A true zero baseline adds credibility and support trustworthy
+          reading.</li>
+        <li> <b> Loaded headline and subtitles. </b> Score: -2. Strong initial statements can steer interpretation
+          before the reader looks at the rest of the chart. The words “more than all others combined” further indicates
+          a significant difference.</li>
       </ul>
     </section>
 
@@ -174,23 +191,38 @@
       <h3>AGAINST the Proposition</h3>
 
       <figure>
-        <img src="project2stance2.png" alt="Police Show Racial Fairness in NYC" />
-        <figcaption>BRIEF CAPTION HERE.</figcaption>
+        <img src="project2stance2.png" alt="Police Show Racial Bias in NYC" />
+        <figcaption>Racial Fairness</figcaption>
       </figure>
 
       <p>Design Decisions and Rationale:</p>
 
       <ul>
-        <li>RATIONALE_1</li>
-        <li>RATIONALE_2</li>
-        <li>RATIONALE_3</li>
+        <li> <b>Stacked bar chart normalized to 100%. </b> Score: -2. This normalization only shows the proportions of
+          the complaint compositions, and hides the differences in amounts, making the groups appear similar.</li>
+        <li> <b> Omitted sample sizes.</b> Score -2. Not including sample size prevents keeps attention on composition
+          and reduces transparency.</li>
+        <li> <b> Pastel-like colors</b> This downplays severity and may subtly communicate that nothing is wrong. </li>
+        <li> <b> Loaded headline and subtitles.</b> Score: -2. Similar to above, strong initial statements can steer
+          interpretation before the reader looks at the rest of the chart. The words “relatively uncommon” in title
+          description further downplays the severity.</li>
+
       </ul>
     </section>
 
     <section>
       <h2>Final Reflection</h2>
 
-      <p>[WRITE FINAL REFLECTION PARAGRAPHS HERE.]</p>
+      <p>Seeking to tell opposing stories with the same dataset was rather challenging. I began by changing surface
+        level elements (chart vs bubble chart, linear vs log scale) and quickly realized that these were not strong
+        enough to change the narrative. </p>
+      <p>The real change came from reframing the question and shifting the focus entirely away from certain aspects of
+        the data. In my case, focusing on the number of reports can tell one story, while focusing on the composition
+        can tell another.</p>
+      <p>This exercise made me pay attention to what is NOT shown. A single chart can typically only show one X and one
+        Y, with extra elements like color, labels and loaded titles. However, a dataset can contain dozens of fields.
+        Decisions in framing the question will emphasize some facts and hide others.
+      </p>
     </section>
   </main>
 </body>
